@@ -1,0 +1,7 @@
+http://www.ebah.com.br/content/ABAAAgv0gAJ/introducao-aos-microcontroladores-arm-cortex-m4-tiva-c-series-texas-instruments#
+
+http://www.embarcados.com.br/shape-the-world-launchpad-tiva-c-tm4c123g/
+
+http://www.embarcados.com.br/debian-linux-com-launchpad-tiva-c-e-msp430/
+
+http://www.embarcados.com.br/software-energia/

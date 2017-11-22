@@ -1,0 +1,6 @@
+Warning[2058] Z:\PIC18F4550\Serial\serial.c 42 : call of function without prototype
+Warning[2058] Z:\PIC18F4550\Serial\serial.c 48 : call of function without prototype
+Warning[2058] Z:\PIC18F4550\Serial\serial.c 51 : call of function without prototype
+Warning[2054] Z:\PIC18F4550\Serial\serial.c 59 : suspicious pointer conversion
+Warning[2058] Z:\PIC18F4550\Serial\serial.c 74 : call of function without prototype
+Warning[2058] Z:\PIC18F4550\Serial\serial.c 79 : call of function without prototype

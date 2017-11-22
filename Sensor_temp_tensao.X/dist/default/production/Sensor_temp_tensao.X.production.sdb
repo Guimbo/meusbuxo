@@ -1,0 +1,346 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"492 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\fmod.c
+[v _fmod fmod `(d  1 e 3 0 ]
+"254 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"13 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\trunc.c
+[v _trunc trunc `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"25 C:\Users\guias\Desktop\Sensor_temp_tensao.X\main.c
+[v _tx_data tx_data `(v  1 e 1 0 ]
+"32
+[v _Delay Delay `(v  1 e 1 0 ]
+"40
+[v _adc_setup adc_setup `(v  1 e 1 0 ]
+"50
+[v _adc_output adc_output `(v  1 e 1 0 ]
+"94
+[v _swap_channel swap_channel `(v  1 e 1 0 ]
+"105
+[v _serial_setup serial_setup `(v  1 e 1 0 ]
+"128
+[v _main main `(v  1 e 1 0 ]
+[s S79 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+]
+"3808 C:\Program Files (x86)\Microchip\xc8\v1.37\include\pic18f4550.h
+[s S87 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+]
+[u S95 . 1 `S79 1 . 1 0 `S87 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES95  1 e 1 @3986 ]
+[s S39 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"4224
+[s S46 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S53 . 1 `S39 1 . 1 0 `S46 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES53  1 e 1 @3988 ]
+"5286
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"5495
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"5792
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5814
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"6887
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"6957
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"7047
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+"7165
+[v _ADRES ADRES `VEus  1 e 2 @4035 ]
+"9311
+[v _BRG16 BRG16 `VEb  1 e 0 @32195 ]
+"9795
+[v _GIEH GIEH `VEb  1 e 0 @32663 ]
+"9805
+[v _GO_DONE GO_DONE `VEb  1 e 0 @32273 ]
+"9891
+[v _IPEN IPEN `VEb  1 e 0 @32391 ]
+"9893
+[v _IRCF0 IRCF0 `VEb  1 e 0 @32412 ]
+"9895
+[v _IRCF1 IRCF1 `VEb  1 e 0 @32413 ]
+"9897
+[v _IRCF2 IRCF2 `VEb  1 e 0 @32414 ]
+"10259
+[v _RCIE RCIE `VEb  1 e 0 @31981 ]
+"10263
+[v _RCIP RCIP `VEb  1 e 0 @31997 ]
+"10661
+[v _TXIF TXIF `VEb  1 e 0 @31988 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+[v _dpowers dpowers `C[5]ui  1 s 10 dpowers ]
+"128 C:\Users\guias\Desktop\Sensor_temp_tensao.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"147
+} 0
+"94
+[v _swap_channel swap_channel `(v  1 e 1 0 ]
+{
+"102
+} 0
+"105
+[v _serial_setup serial_setup `(v  1 e 1 0 ]
+{
+"126
+} 0
+"40
+[v _adc_setup adc_setup `(v  1 e 1 0 ]
+{
+"47
+} 0
+"50
+[v _adc_output adc_output `(v  1 e 1 0 ]
+{
+"80
+[v adc_output@va3_134 va3 `[5]uc  1 a 5 85 ]
+"79
+[v adc_output@tensao tensao `i  1 a 2 73 ]
+"54
+[v adc_output@va4 va4 `[5]uc  1 a 5 80 ]
+[v adc_output@va3 va3 `[5]uc  1 a 5 75 ]
+"56
+[v adc_output@ponto ponto `i  1 a 2 90 ]
+"55
+[v adc_output@valor valor `i  1 a 2 71 ]
+"91
+} 0
+"25
+[v _tx_data tx_data `(v  1 e 1 0 ]
+{
+[v tx_data@data data `uc  1 a 1 wreg ]
+[v tx_data@data data `uc  1 a 1 wreg ]
+[v tx_data@data data `uc  1 a 1 0 ]
+"29
+} 0
+"492 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+"528
+[v sprintf@val val `ui  1 a 2 29 ]
+"494
+[v sprintf@ap ap `[1]*.39v  1 a 2 25 ]
+"499
+[v sprintf@c c `c  1 a 1 31 ]
+"506
+[v sprintf@prec prec `c  1 a 1 28 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 27 ]
+"492
+[v sprintf@sp sp `*.39uc  1 p 2 18 ]
+[v sprintf@f f `*.25Cuc  1 p 2 20 ]
+"1541
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 17 ]
+"8
+[v ___lwmod@dividend dividend `ui  1 p 2 13 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 15 ]
+"26
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 10 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 12 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 6 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 8 ]
+"31
+} 0
+"3 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\fmod.c
+[v _fmod fmod `(d  1 e 3 0 ]
+{
+"5
+[v fmod@n n `d  1 a 3 65 ]
+"3
+[v fmod@x x `d  1 p 3 59 ]
+[v fmod@y y `d  1 p 3 62 ]
+"8
+} 0
+"13 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\trunc.c
+[v _trunc trunc `(d  1 e 3 0 ]
+{
+"15
+[v trunc@i i `d  1 a 3 54 ]
+"16
+[v trunc@expon expon `i  1 a 2 57 ]
+"13
+[v trunc@x x `d  1 p 3 51 ]
+"25
+} 0
+"254 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+{
+[v frexp@value value `d  1 p 3 0 ]
+[v frexp@eptr eptr `*.39i  1 p 2 3 ]
+"274
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 36 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 40 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 35 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 26 ]
+"73
+} 0
+"42 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+{
+"44
+[v ___altoft@sign sign `uc  1 a 1 50 ]
+[v ___altoft@exp exp `uc  1 a 1 49 ]
+"42
+[v ___altoft@c c `l  1 p 4 41 ]
+"57
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 23 ]
+"20
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 18 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 22 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 21 ]
+[v ___ftmul@exp exp `uc  1 a 1 17 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 8 ]
+[v ___ftmul@f2 f2 `f  1 p 3 11 ]
+"157
+} 0
+"54 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 21 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 25 ]
+[v ___ftdiv@exp exp `uc  1 a 1 24 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 20 ]
+"54
+[v ___ftdiv@f1 f1 `f  1 p 3 11 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 14 ]
+"86
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 37 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 36 ]
+[v ___ftadd@sign sign `uc  1 a 1 35 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 26 ]
+[v ___ftadd@f2 f2 `f  1 p 3 29 ]
+"148
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"28 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"32 C:\Users\guias\Desktop\Sensor_temp_tensao.X\main.c
+[v _Delay Delay `(v  1 e 1 0 ]
+{
+"33
+[v Delay@j j `i  1 a 2 0 ]
+"37
+} 0
