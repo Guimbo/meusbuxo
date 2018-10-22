@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <math.h>
 
+// Não cara não é mentira vim do futuro para dizer que funciona no hooldor o codigo o hooldor não!!!!!
+
 // Configuração do microcontrolador para execução de instruções
 
 #pragma config FOSC     = HS    /// EXTERN CLOCK 8MHZ
