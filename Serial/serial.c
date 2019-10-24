@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 
-// Configuração do microcontrolador para execução de instruções
+// Configuraï¿½ï¿½o do microcontrolador para execuï¿½ï¿½o de instruï¿½ï¿½es
 
 #pragma config FOSC     = HS    /// EXTERN CLOCK 8MHZ
 #pragma config IESO     = OFF   /// INTERNAL/EXTERNAL OSCILATOR DISABLE
@@ -20,6 +20,26 @@
 
 #define TxD PORTCbits.RC6
 //#define Start_Bit 0
+// Configura a USART para comunicaÃ§Ã£o Serial
+void configurarUSART(){
+	OpenUSART(USART_TX_INT_OFF &  // Transmit Interrupt OFF OBS: Tem no datasheet -> mudei para ON
+            USART_RX_INT_ON & // Receive Interrupt ON OBS: Tem no datasheet -> mudei para ON
+            USART_ASYNCH_MODE & // Asynchronous Mode OBS: Tem no datasheet
+            USART_EIGHT_BIT & // 8-bit Transmit/Receive OBS: Tem no datasheet
+            USART_CONT_RX & // Continuous Reception OBS: Pesquisar para qu? serve. Deve ter no datasheet
+			  		USART_SYNC_SLAVE &
+            USART_BRGH_HIGH, // High Baud Rate
+    		  	51); // Baud Rate 9600 OBS: Formula no livro
+						baudUSART(BAUD_8_BIT_RATE &
+			  		BAUD_AUTO_OFF &
+		      	BAUD_WAKEUP_OFF);
+	
+	BAUDCONbits.RXDTP = 0; //Inversao
+	BAUDCONbits.TXCKP = 0; //Inversao
+}
+
+
+
 
 //declara as suas variaveis de software
 
@@ -70,9 +90,9 @@ void main()
  
 TRISC=0b10111110;  // TxD -> saida = 0
 
-TxD=1; //coloca a linha de transmissão em repouso
+TxD=1; //coloca a linha de transmissï¿½o em repouso
 Delay_1200bps ();
-
+configurarUSART();
 while (1)
 	{
 	Envia_Byte_Serial ('A');
@@ -80,6 +100,6 @@ while (1)
 //	Envia_Frase_Serial ("As mensagens estao inseridas direto no codigo\r");
 //	Envia_Frase_Serial ("e podem ter qualquer tamanho\r");
 //	Envia_Frase_Serial ("OBS: nao gastamos RAM para alocar as mensagens\r");
-//	while (1) {}; // parada forçada
+//	while (1) {}; // parada forï¿½ada
 	}
 }
