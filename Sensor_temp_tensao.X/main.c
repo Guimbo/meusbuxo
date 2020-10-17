@@ -2,10 +2,11 @@
 #include <string.h>
 #include <stdio.h>
 #include <math.h>
-
+//incluindo a biblioteca de delay
+#include <delays.h>
 //#define _XTAL_FREQ 4000000  //Define cock interno com 4MHz
 
-// Configuração do microcontrolador para execução de instruções
+// Configuraï¿½ï¿½o do microcontrolador para execuï¿½ï¿½o de instruï¿½ï¿½es
 #pragma config FOSC = INTOSC_EC
 
 //#pragma config FOSC     = HS    /// EXTERN CLOCK 8MHZ
@@ -21,7 +22,7 @@
 #pragma config LVP      = OFF   /// DISABLE LOW VOLTAGE PROGRAM (ICSP DISABLE)
 
 
-//  Função para envio de dado serial
+//  Funï¿½ï¿½o para envio de dado serial
 void tx_data(char data){
     TXREG = data;
 //  Wait for the Tx flag bit to be high
@@ -36,17 +37,17 @@ j=0;
 j=0;
 }
 
-//  Função para configurar o módulo ADC
+//  Funï¿½ï¿½o para configurar o mï¿½dulo ADC
 void adc_setup(){
-//  Seleccionar o resultado ajustado direito , tempo 4TAD Aquisição , FOSC / 16
+//  Seleccionar o resultado ajustado direito , tempo 4TAD Aquisiï¿½ï¿½o , FOSC / 16
     ADCON2 = 0x95;
-//  Seleccionar VDD e VSS como fonte de tensão de referência , Pin0 ( AN0 ) como entrada analógica
+//  Seleccionar VDD e VSS como fonte de tensï¿½o de referï¿½ncia , Pin0 ( AN0 ) como entrada analï¿½gica
     ADCON1 = 0b1101;
-//  Selecionando AN0 como canal de entrada analógica para a conversão , permitindo módulo A / D
+//  Selecionando AN0 como canal de entrada analï¿½gica para a conversï¿½o , permitindo mï¿½dulo A / D
     ADCON0 = 0b001;
 }
 
-//  Função para converter valores analogicos em digitais
+//  Funï¿½ï¿½o para converter valores analogicos em digitais
 void adc_output(){
 //  Store the result in 16-bit variable
 
@@ -74,6 +75,8 @@ void adc_output(){
         tx_data(va4[3]);
         tx_data(' ');
         Delay ();
+        //pode usar a lib de delay
+        Delay1KTCYx(200);
     }
     else{
         int tensao = (1480 * ADRES)/1023;  
@@ -86,11 +89,12 @@ void adc_output(){
         tx_data(va3[2]);
         tx_data(va3[3]);
         tx_data('.');
+        Delay1KTCYx(200);
         Delay ();
     } 
 }
 
-// Função para trocar o canal de leitura analogica
+// Funï¿½ï¿½o para trocar o canal de leitura analogica
 void swap_channel(){
     
     if (ADCON0 == 0b001){
@@ -101,13 +105,13 @@ void swap_channel(){
     }
 }
 
-// Configuração Serial
+// Configuraï¿½ï¿½o Serial
 void serial_setup(){
-//  Fazer o pino 6 (Tx) de PORTC como pino de saída
+//  Fazer o pino 6 (Tx) de PORTC como pino de saï¿½da
     TRISCbits.TRISC6 = 0;
 //  Fazer o pino 7 (Rx) de PORTC como pino de entrada
     TRISCbits.TRISC7 = 1;
-//  Ativando transmissor, modo assíncrono, tamanho caracteres de 8-bit, taxa alta de transmissão
+//  Ativando transmissor, modo assï¿½ncrono, tamanho caracteres de 8-bit, taxa alta de transmissï¿½o
     TXSTA = 0x24;
 //  Ativando porta serial, receptor, tamanho caracter 8-bit
     RCSTA = 0x90;
@@ -136,10 +140,10 @@ void main(){
     adc_setup();
 
     while(1){
-    //  inicia a conversão A/D
+    //  inicia a conversï¿½o A/D
         GO_DONE = 1;
         GO_DONE = 1;
-    //  Espera a conversão ser concluida
+    //  Espera a conversï¿½o ser concluida
         while (GO_DONE) {};
         adc_output();
         swap_channel();
